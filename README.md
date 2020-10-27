@@ -6,7 +6,7 @@ Complete the `Category` class in `budget.py`. It should be able to instantiate o
 * A `withdraw` method that is similar to the `deposit` method, but the amount passed in should be stored in the ledger as a negative number. If there are not enough funds, nothing should be added to the ledger. This method should return `True` if the withdrawal took place, and `False` otherwise.
 * A `get_balance` method that returns the current balance of the budget category based on the deposits and withdrawals that have occurred.
 * A `transfer` method that accepts an amount and another budget category as arguments. The method should add a withdrawal with the amount and the description "Transfer to [Destination Budget Category]". The method should then add a deposit to the other budget category with the amount and the description "Transfer from [Source Budget Category]". If there are not enough funds, nothing should be added to either ledgers. This method should return `True` if the transfer took place, and `False` otherwise.
-* A `check_funds` method that accepts an amount as an argument. It returns `False` if the amount is less than the balance of the budget category and returns `True` otherwise. This method should be used by both the `withdraw` method and `transfer` method.
+* A `check_funds` method that accepts an amount as an argument. It returns `False` if the amount is greater than the balance of the budget category and returns `True` otherwise. This method should be used by both the `withdraw` method and `transfer` method.
 
 When the budget object is printed it should display:
 * A title line of 30 characters where the name of the category is centered in a line of `*` characters.
@@ -33,26 +33,26 @@ Look at the example output below very closely and make sure the spacing of the o
 
 ```
 Percentage spent by category
-100|          
- 90|          
- 80|          
- 70|          
- 60| o        
- 50| o        
- 40| o        
- 30| o        
- 20| o  o     
- 10| o  o  o  
-  0| o  o  o  
+100|
+ 90|
+ 80|
+ 70|
+ 60| o
+ 50| o
+ 40| o
+ 30| o
+ 20| o  o
+ 10| o  o  o
+  0| o  o  o
     ----------
-     F  C  A  
-     o  l  u  
-     o  o  t  
-     d  t  o  
-        h     
-        i     
-        n     
-        g     
+     F  C  A
+     o  l  u
+     o  o  t
+     d  t  o
+        h
+        i
+        n
+        g
 ```
 
 The unit tests for this project are in `test_module.py`.
@@ -61,7 +61,7 @@ The unit tests for this project are in `test_module.py`.
 
 Write your code in `budget.py`. For development, you can use `main.py` to test your `Category` class. Click the "run" button and `main.py` will run.
 
-### Testing 
+### Testing
 
 We imported the tests from `test_module.py` to `main.py` for your convenience. The tests will run automatically whenever you hit the "run" button.
 
