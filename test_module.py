@@ -41,7 +41,7 @@ class UnitTests(unittest.TestCase):
         self.food.withdraw(45.67, "milk, cereal, eggs, bacon, bread")
         actual = self.food.get_balance()
         expected = 854.33
-        self.assertEqual(actual, expected, 'Expected balance to be 54.33')
+        self.assertEqual(actual, expected, 'Expected balance to be 854.33')
 
     def test_transfer(self):
         self.food.deposit(900, "deposit")
