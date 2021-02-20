@@ -86,7 +86,7 @@ class UnitTests(unittest.TestCase):
         self.food.deposit(900, "deposit")
         self.entertainment.deposit(900, "deposit")
         self.business.deposit(900, "deposit")
-        self.food.withdraw(105.55)
+        self.food.withdraw(705.55)
         self.entertainment.withdraw(33.40)
         self.business.withdraw(10.99)
         actual = create_spend_chart([self.business, self.food, self.entertainment])
