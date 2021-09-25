@@ -34,7 +34,7 @@ class UnitTests(unittest.TestCase):
         actual = self.food.ledger[1]
         expected = {"amount": -45.67, "description": ""}
         self.assertEqual(actual, expected, 'Expected `withdraw` method with no description to create a blank description.')
-        self.assertEqual(good_withdraw, True, 'Expected `transfer` method to return `True`.')
+        self.assertEqual(good_withdraw, True, 'Expected `withdraw` method to return `True`.')
 
     def test_get_balance(self):
         self.food.deposit(900, "deposit")
