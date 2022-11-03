@@ -34,6 +34,8 @@ class Category:
         elif amount <= balance:
             return True
 
+    
+
 
 
 
@@ -41,3 +43,6 @@ class Category:
 
 def create_spend_chart(categories):
     ...
+
+
+# This is a teste for the push
